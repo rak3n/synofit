@@ -70,9 +70,17 @@
     display: grid;
     align-items: left;
     height: max-content;
-    padding: 140px 30px;
-    width: max-content;
+    padding: 90px 30px;
+    width: auto;
     grid-template-rows: max-content max-content;
+    gap: 60px;
+    padding-bottom: 60px;
+}
+
+.shopTitleContainer {
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    justify-content: space-around;
 }
 
 .shopTitle {
@@ -350,7 +358,7 @@
 }
 
 .productContainer {
-    max-height: 534px;
+    max-height: 424px;
     grid-template-rows: max-content auto;
     padding: 70px 40px;
     width: auto;
@@ -370,4 +378,61 @@
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.footerSearchTitle {
+    border-radius: 16px;
+    width: max-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 124%;
+    /* or 43px */
+
+
+    /* White */
+
+    color: #FFFFFF;
+
+    max-width: 358px;
+    text-align: left;
+}
+
+.footerSearchColumns {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerSearchInputTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* identical to box height, or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* White */
+
+    color: #FFFFFF;
+
+    text-align: left;
+    min-width: 348px;
+}
+
+.footerColumn {
+    grid-gap: 78px;
+    display: grid;
+    padding: 98px 20px;
+    padding-bottom: 0;
 }

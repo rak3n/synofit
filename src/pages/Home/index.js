@@ -10,6 +10,15 @@ import contactImage from '../../assets/contact-image.png';
 import vitaminstore from '../../assets/vitaminstore_logo.png'
 import daLogo from '../../assets/da_logo.png';
 import footerSearch from '../../assets/footer-search.png';
+
+import Huid from '../../assets/Huid.svg';
+import Lutchwegen from '../../assets/Luchtwegen.svg';
+import Spieren from '../../assets/Spieren.svg';
+import Gewrichten from '../../assets/Gewrichten.svg';
+import Hart from '../../assets/Hart.svg';
+import Botten from '../../assets/Botten.svg';
+
+
 import styles from './style.module.css';
 
 const Card = () => {
@@ -52,7 +61,14 @@ export default function Home() {
 
       <section className={styles.shopIntro}>
         <div className={styles.shopTitle}>Shop by Category</div>
-        <div>Images</div>
+        <div className={styles.shopTitleContainer}>
+          <img src={Huid} />
+          <img src={Lutchwegen} />
+          <img src={Spieren} />
+          <img src={Gewrichten} />
+          <img src={Hart} />
+          <img src={Botten} />
+        </div>
       </section>
 
       <section className={styles.container}>
@@ -145,6 +161,23 @@ export default function Home() {
       <section className={`${styles.container} ${styles.testimonialBackground}`} style={{height: '100%'}} >
         <img src={footerSearch} className={styles.footerSearch} />
         <div className={styles.footerSearchPadding} />
+        <div className={styles.footerSearchColumns}>
+          <div className={styles.footerColumn}>
+            <div className={styles.footerSearchTitle}>Wilt u op de hoogte blijven?</div>
+            <div>
+              <div className={styles.footerSearchInputTitle}>Typ hier uw e-mailadres</div>
+              <div>Input</div>
+            </div>
+          </div>
+          <div className={styles.footerColumn}>
+            <div style={{ height: 86}}/>
+            <div>
+              <div className={styles.footerSearchInputTitle}>Of vlog ons op social media</div>
+              <div>Input</div>
+            </div>
+          </div>
+          <div></div>
+        </div>
       </section>
 
     </>
