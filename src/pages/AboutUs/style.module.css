@@ -1,0 +1,767 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+}
+
+.backgroundImage {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+.containerInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+.heroTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 88px;
+    color: #fff;
+    text-shadow: 0.5px 0.5px #fff;
+}
+
+.heroSubTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: -0.01em;
+    color: #003049;
+    max-width: 291px;
+}
+
+.containerChildLeft {
+    display: grid;
+    text-align: left;
+    align-items: center;
+    height: max-content;
+    grid-gap: 8px;
+    padding: 37px;
+}
+
+.containerChildLeft>.heroSubTitle {
+    margin-bottom: 20px;
+}
+
+.containerChildRight {
+    position: relative;
+}
+
+.childRightImage {
+    position: absolute;
+    top: -48px;
+    right: 0;
+}
+
+.shopIntro {
+    display: grid;
+    align-items: left;
+    height: max-content;
+    padding: 90px 30px;
+    width: auto;
+    grid-template-rows: max-content max-content;
+    gap: 60px;
+    padding-bottom: 60px;
+}
+
+.shopTitleContainer {
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    justify-content: space-around;
+}
+
+.shopTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 119%;
+    text-align: left;
+}
+
+
+.tagLineTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 139%;
+    /* or 44px */
+
+
+    /* darl blue */
+
+    color: #003049;
+}
+
+.tagLineSubTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* or 19px */
+    letter-spacing: -0.01em;
+    /* darl blue */
+    color: #003049;
+
+    margin-bottom: 30px;
+}
+
+.tagLineFooter {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 10px;
+}
+
+
+.testimonialTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 139%;
+    /* or 33px */
+
+
+    /* darl blue */
+
+    color: #003049;
+
+    margin-bottom: 20px;
+}
+
+.testimonialSubTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* darl blue */
+
+    color: #003049;
+}
+
+.testimonialContainer {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    padding: 0px 38px;
+    width: auto;
+}
+
+.testimonialText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 124%;
+    color: #003049;
+    max-width: 606px;
+    text-align: left;
+}
+
+.testimonialBackground {
+    width: calc(100vw - 17px);
+}
+
+.testimonialImage2 {
+    width: calc(100vw - 17px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+.testimonialTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 124%;
+    color: #003049;
+}
+
+
+.testimonialSubTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* darl blue */
+
+    color: #003049;
+}
+
+.testimonial2Text {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    padding: 60px 0px;
+}
+
+.cardHeader {
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+.cardBody {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* darl blue */
+
+    color: #003049;
+}
+
+
+.cardFooter {
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+.testimonialCard {
+    z-index: 1;
+    padding: 60px 48px;
+    text-align: left;
+}
+
+.testimonalCardHeader {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 124%;
+    color: #FFFFFF;
+}
+
+.testimonialCardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    z-index: 1;
+    margin: 0px -14.5px;
+}
+
+.cardContainer {
+    min-height: 200px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin: 14.5px;
+
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+    padding: 24px 26px;
+}
+
+.contactTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 119%;
+    /* or 54px */
+
+
+    /* darl blue */
+
+    color: #003049;
+}
+
+.contactSubTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* darl blue */
+
+    color: #003049;
+}
+
+.contactFooterText {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 20px;
+}
+
+.contactColumn {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contactColumnHeader {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 143%;
+    /* or 21px */
+
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+
+    /* blue gray */
+
+    color: #7C878D;
+}
+
+.contactContainer {
+    max-height: 534px;
+}
+
+.partnersTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 124%;
+    /* or 43px */
+
+
+    /* darl blue */
+
+    color: #003049;
+
+    text-align: left;
+    width: max-content;
+    height: max-content;
+}
+
+.productLogos {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+}
+
+.productContainer {
+    max-height: 424px;
+    grid-template-rows: max-content auto;
+    padding: 70px 40px;
+    width: auto;
+}
+
+
+.footerSearch {
+    background-size: cover;
+    width: 100%;
+}
+
+.footerSearchPadding {
+    background: rgb(0, 48, 73);
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footerSearchTitle {
+    border-radius: 16px;
+    width: max-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 124%;
+    /* or 43px */
+
+
+    /* White */
+
+    color: #FFFFFF;
+
+    max-width: 358px;
+    text-align: left;
+}
+
+.footerSearchColumns {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerSearchInputTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* identical to box height, or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* White */
+
+    color: #FFFFFF;
+
+    text-align: left;
+    min-width: 348px;
+}
+
+.footerColumn {
+    grid-gap: 78px;
+    display: grid;
+    padding: 98px 20px;
+    padding-bottom: 0;
+}
+
+.formulaContainer {
+    height: 80vh;
+    background: #F8F9F1;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: -54px;
+}
+
+.companyFormulaRelativeContainer {
+    display: grid;
+    grid-template:
+    "a a" max-content
+    "b c";
+    grid-gap: 40px;
+    padding: 50px 38px;
+}
+
+.aboutCompanyAbsoluteContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.fomulaImageBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.formulaTitle {
+    grid-area: a;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 119%;
+    /* or 54px */
+
+
+    /* darl blue */
+
+    color: #003049;
+    max-width: 694px;
+}
+
+.formulaBody1 {
+    grid-area: b;
+    max-width: 415px;
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 127%;
+/* or 19px */
+
+letter-spacing: -0.01em;
+
+/* darl blue */
+
+color: #003049;
+}
+
+.formulaBody2 {
+    grid-area: c;
+    max-width: 415px;
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 127%;
+/* or 19px */
+
+letter-spacing: -0.01em;
+
+/* darl blue */
+
+color: #003049;
+}
+
+.fomulaImageTop {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.founderSpeakingContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.speakerContainerLeft {
+    max-width: 630px;
+    height: 100%;
+    background: grey;
+    margin: auto;
+}
+
+.speakerContainerRight {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    max-width: 482px;
+    text-align: left;
+}
+
+.speakerContainerTitle {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 35px;
+line-height: 124%;
+/* or 43px */
+
+
+/* darl blue */
+
+color: #003049;
+}
+
+.speakerContainerSubTitle {
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+/* or 21px */
+
+
+/* blue gray */
+
+color: #7C878D;
+}
+
+.sectionHead {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 45px;
+line-height: 119%;
+/* or 54px */
+
+
+/* darl blue */
+
+color: #003049;
+}
+
+.peopleOfSynoFit {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    text-align: left;
+    padding: 0px 38px;
+    width: auto;
+    grid-gap: 64px;
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 96%;
+}
+
+.peopleFace {
+    background: red;
+    border-radius: 50%;
+    width: 112%;
+}
+
+.peopleDesignationOffset {
+    padding-left: 24px;
+}
+
+.peopleContainer {
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+}
+
+.peopleInfo {
+    display: grid;
+    grid-template-rows: max-content max-content;
+}
+
+.peopleName {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 139%;
+/* or 33px */
+
+display: flex;
+align-items: center;
+
+/* darl blue */
+
+color: #003049;
+}
+
+.peopleDesignation {
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 127%;
+/* identical to box height, or 19px */
+
+letter-spacing: -0.01em;
+
+/* blue gray */
+
+color: #7C878D;
+}
+
+.absoluteTeamContainer{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.teamImage {
+    width: 100%;
+    background: #D9D9D9;
+}
+
+.teamContainer {
+    height: 80vh;
+    align-items: end;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.relativeTeamContainer{ 
+    position: relative;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 139%;
+/* or 33px */
+
+display: flex;
+align-items: center;
+
+/* White */
+
+color: #FFFFFF;
+
+text-align: left;
+padding: 38px;
+
+background: linear-gradient(180deg, rgba(23, 18, 15, 0) 0%, rgba(23, 18, 15, 0.66) 100%);
+border-radius: 0px 0px 16px 16px;
+}
+
+.imageFooter {
+    height: max-content;
+    min-height: 223px;
+}
+
+.imageFooterText {
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 127%;
+/* or 19px */
+
+letter-spacing: -0.01em;
+
+/* blue gray */
+
+color: #7C878D;
+text-align: left;
+padding: 38px;
+max-width: 439px;
+}
+
+.curvedBackground {
+    position: absolute;
+    top: -194px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.testimonialImageFooter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: -114px;
+}
+
+.testimonialCOntainerAbsolute {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    padding: 0px 38px;
+    text-align: left;    
+}
+
+.containerChildLeftTestimonial {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 124%;
+    color: #FFFFFF;
+    max-width: 437px;
+}
