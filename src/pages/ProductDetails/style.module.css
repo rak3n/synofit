@@ -1,0 +1,251 @@
+.productDetailsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.childContainerLeft {
+    display: grid;
+    width: 100%;
+    text-align: left;
+    grid-gap: 32px;
+}
+
+.childContainerRight {
+    display: grid;
+    align-items: center;
+    width: 100%;
+
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+
+    text-align: left;
+
+    grid-gap: 24px;
+
+    max-width: 420px;
+}
+
+.productImageContainer {
+    height: 438px;
+    background: #F5F5F5;
+    border-radius: 16px;
+    width: 521px;
+    margin-bottom: 12px;
+}
+
+.productDetailsContainer>img {
+    width: 100%;
+    height: 100%;
+}
+
+.productIntelContainer {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: left;
+    max-width: 519px;
+}
+
+.routeHeading {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: -0.01em;
+    color: #003049;
+}
+
+.productIntelContainer {
+    display: grid;
+    align-items: center;
+    text-align: left;
+    grid-gap: 22px;
+}
+
+.productIntelTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: -0.01em;
+    color: #7C878D;
+}
+
+.productIntelSubTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: -0.01em;
+    color: #003049;
+}
+
+.productVerificationContainer {
+    display: grid;
+    grid-template-columns: max-content;
+    width: 100%;
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: -0.01em;
+    color: #003049;
+
+    text-align: left;
+    margin-top: 40px;
+}
+
+.verificationLine {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    grid-gap: 6px;
+}
+
+.productPurchaseHeading {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: -0.01em;
+    color: #003049;
+}
+
+.productPurchaseTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 124%;
+    color: #003049;
+}
+
+.newUserBanner {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: -0.01em;
+    color: #003049;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+
+    padding: 14px 0px;
+}
+
+.productPriceBold {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 124%;
+    color: #003049;
+    display: grid;
+    justify-content: start;
+    grid-template-columns: max-content max-content;
+}
+
+.productPrice {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 12px;
+}
+
+.productDropdown {
+    padding: 8px 30px;
+    border: 0.5px solid #7C878D;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.productPurchaseButtons {
+    display: grid;
+    grid-template-columns: auto 10%;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.heartIconContainer {
+    padding: 25%;
+    border: 0.5px solid #7C878D;
+    border-radius: 20px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.purchaseCardStyles {
+    width: 100%;
+}
+
+.purchaseOptions {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-gap: 18px;
+}
+
+.purchaseOptionsButton {
+    padding: 10px 20px;
+    border: 0.5px solid #7C878D;
+    border-radius: 20px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.productImageCard {
+    width: 100%;
+    height: 100%;
+}
+
+.backgroundImage {
+    width: auto;
+    height: auto;
+    border-radius: 16px;
+    background-image: linear-gradient(to right top, #77bfc5, #78bfc4, #79c0c2, #7bc0c1, #7cc0c0, #7ec0bf, #81c1be, #83c1bd, #87c2bb, #8ac3ba, #8ec4b8, #92c5b7);
+    padding: 80px 38px;
+    grid-gap: 40px;
+    text-align: left;
+    display: grid;
+    grid-template-rows: max-content max-content;
+}
+
+.backgroundTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 124%;
+    color: #FEFFF9;
+}
+
+.cardContainer {
+    background: #F3F3F3;
+    border-radius: 16px;
+}
+
+.backgroundCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.productNotExistText {
+    font-family: 'Mulish';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* identical to box height, or 19px */
+
+    letter-spacing: -0.01em;
+
+    color: #D8232A;
+}

@@ -1,0 +1,351 @@
+.billingContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.discount {
+    display: grid;
+    grid-template-columns: auto 20%;
+    grid-gap: 16px;
+}
+
+.priceDetailsRow {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    text-align: right;
+    letter-spacing: -0.01em;
+    color: #003049;
+
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+}
+
+.priceDetailsField {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: -0.01em;
+    color: #7C878D;
+}
+
+.priceDetailsValue {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    text-align: right;
+    letter-spacing: -0.01em;
+    color: #003049;
+}
+
+.cartPriceDetails {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+}
+
+.priceTotalRow {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+}
+
+.priceTotalField {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 139%;
+    color: #003049;
+}
+
+.productTotalPrice {
+    text-align: left;
+}
+
+.billingTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 139%;
+    color: #003049;
+    margin: 30px 0px;
+}
+
+.rightSideContainer {
+    display: grid;
+    align-items: center;
+    width: 100%;
+
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+
+    text-align: left;
+
+    grid-gap: 24px;
+
+    max-width: 420px;
+    margin-top: 54px;
+}
+
+.discountInput {
+    border: 1px solid #E5E5E5;
+    border-radius: 20px;
+    padding: 10px 14px;
+}
+
+.productInfoColumn {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 54px;
+}
+
+.productImage {
+    height: 133px;
+    background: #F0F3F4;
+    border-radius: 16px;
+}
+
+.productInfo {
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+    grid-gap: 18px;
+}
+
+
+.productStatus {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* darl blue */
+
+    color: #003049;
+
+    background: #E5E5E5;
+    /* Grey 3 */
+
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+
+    width: max-content;
+    padding: 4px 8px;
+}
+
+.productInfoColumn {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 54px;
+}
+
+.productField {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* identical to box height, or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* Grey 2 */
+
+    color: #979797;
+    margin-right: 10px;
+}
+
+.productValues {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 127%;
+    /* identical to box height, or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* darl blue */
+
+    color: #003049;
+}
+
+.productName {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 127%;
+    /* identical to box height, or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* darl blue */
+
+    color: #003049;
+}
+
+.formInputTwoCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 18px;
+}
+
+.leftSideContainer {
+    max-width: 512px;
+    text-align: left;
+}
+
+.desclaimer {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 127%;
+    /* or 19px */
+
+    letter-spacing: -0.01em;
+
+    /* darl blue */
+
+    color: #003049;
+    margin-top: 36px;
+    margin-bottom: 29px;
+}
+
+.billingLoginHeading {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 6px;
+
+    align-items: center;
+}
+
+.orderPlaceTitle {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    /* identical to box height, or 19px */
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    /* Grey 1 */
+
+    color: #293228;
+}
+
+.loginLink {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    text-decoration-line: underline;
+
+    /* Green */
+
+    color: #008975;
+}
+
+.editLink {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    text-decoration-line: underline;
+
+    /* Green */
+
+    color: #008975;
+
+}
+
+.deliveryContainer {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    grid-gap: 14px;
+    margin-top: 60px;
+}
+
+.deliveryTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 139%;
+    color: #003049;
+    grid-gap: 20px;
+}
+
+.deliveryTitle {
+    margin-bottom: 18px;
+}
+
+.billingAddressText {
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 127%;
+/* identical to box height, or 19px */
+
+letter-spacing: -0.01em;
+
+/* blue gray */
+
+color: #7C878D;
+margin-bottom: 12px;
+}
+
+.chippingCollapseContainer {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shippingChildSecond {
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 150%;
+/* or 26px */
+
+
+/* Green */
+
+color: #008975;
+}
+
+.marginRight {
+    margin-right: 10px;
+}
+
+.paymentsIcon {
+    line-height: 12px;
+}

@@ -1,14 +1,7 @@
 import React from 'react'
-import Button from '../../components/Button';
 import heroImage from '../../assets/hero-background.svg';
-import taglineImage from '../../assets/tagline-background.svg';
 import heroRight from '../../assets/about-us-hero.png';
 import testimonialImage from '../../assets/synofit_into_about_us.png';
-import testimonialImage2 from '../../assets/testimonial-second.png';
-import synoFitGradient from '../../assets/Synofit_Gradients.png';
-import contactImage from '../../assets/contact-image.png';
-import vitaminstore from '../../assets/vitaminstore_logo.png'
-import daLogo from '../../assets/da_logo.png';
 import footerSearch from '../../assets/footer-search.png';
 
 import formulaImageTop from '../../assets/formula-image-top.png';
@@ -19,37 +12,13 @@ import aboutusTestimonial from '../../assets/aboutus-testimoney.png';
 import testimonialBackground from '../../assets/gradient-synofit.png';
 import testimonialBackgroundCurve from '../../assets/curved-gradient.png';
 
-import Huid from '../../assets/Huid.svg';
-import Lutchwegen from '../../assets/Luchtwegen.svg';
-import Spieren from '../../assets/Spieren.svg';
-import Gewrichten from '../../assets/Gewrichten.svg';
-import Hart from '../../assets/Hart.svg';
-import Botten from '../../assets/Botten.svg';
-
-
 import styles from './style.module.css';
 
-const Card = () => {
-    return (
-        <section className={styles.cardContainer}>
-            <div className={styles.cardHeader}>
-                <div className={styles.cardRating}>5.0</div>
-                <div>*****</div>
-            </div>
-            <div className={styles.cardBody}>
-                I Used Synofit premium liquid for 40 days, then the synofit primium liquid as a maintenance dose. It's fine, it works very well, and it moves me well.
-                I also think the customer friendliness and delivery are very good.
-                I am very satisfied so far.
-            </div>
-            <div className={styles.cardFooter}>
-                <div style={{ width: 22, height: 22, borderRadius: '50%' }}>im</div>
-                <div>J. Johnson</div>
-            </div>
-        </section>
-    );
-};
-
 export default function Home() {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <>

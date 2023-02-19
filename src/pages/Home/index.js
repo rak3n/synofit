@@ -20,6 +20,7 @@ import Botten from '../../assets/Botten.svg';
 
 
 import styles from './style.module.css';
+import { useHistory } from 'react-router-dom';
 
 const Card = () => {
   return (
@@ -42,6 +43,7 @@ I am very satisfied so far.
 };
 
 export default function Home() {
+  const history = useHistory();
 
   return (
     <>
@@ -51,7 +53,7 @@ export default function Home() {
           <div className={styles.containerChildLeft}>
             <div className={styles.heroTitle}>Optimal in beweging</div>
             <div className={styles.heroSubTitle}>Unique products for the musculoskeletal system</div>
-            <Button text="More About Synofit" />
+            <Button text="More About Synofit" style={{ cursor: 'pointer' }} onClick={()=>history.push('/aboutus')} />
           </div>
           <div styles={styles.containerChildRight}>
             <img src={heroRight} className={styles.childRightImage} />
@@ -78,7 +80,7 @@ export default function Home() {
             <div className={styles.tagLineTitle}>Innovative and unique nutritional supplements</div>
             <div className={styles.tagLineSubTitle}>Thanks to our focus, we can continuously work on quality and on improving our products. As a result, we can permanently guarantee a high-quality end product. Our inspiration lies in nature, combined with the latest insights from science.</div>
             <div className={styles.tagLineFooter}>
-              <Button text="More about Synofit" />
+              <Button text="More about Synofit" style={{ cursor: 'pointer' }} onClick={()=>history.push('/aboutus')} />
               <Button text="Our Ingredients" />
             </div>
           </div>
@@ -104,7 +106,7 @@ export default function Home() {
           <div className={`${styles.containerChildRight} ${styles.testimonial2Text}`}>
             <div className={styles.testimonialTitle}>Actie</div>
             <div className={styles.testimonialSubTitle} style={{ marginBottom: 34 }}>Est ut amet, viverra proin maecenas. Pellentesque nisi curabitur sed sed habitant. Enim odio quis viverra tristique. Nec quisque felis, ipsum tempor. Tristique nulla tempus porta tempor nulla scelerisque. Donec malesuada. Consectetur enim augue blandit ut. Est ut amet, viverra proin maecenas. Pellentesque nisi curabitur sed sed habitant.</div>
-            <Button text="learn more" />
+            <Button text="learn more" style={{ cursor: 'pointer' }} onClick={()=>history.push('/product')} />
           </div>
         </div>
       </section>
