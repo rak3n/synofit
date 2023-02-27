@@ -494,3 +494,29 @@
 .productTotalPrice {
     text-align: left;
 }
+
+@media screen and (max-width: 500px) {
+    .backgroundCard {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: none;
+    }
+
+    .productDetailsContainer {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        padding: 26px;
+    }
+
+    .cartSectionRow{
+        grid-template-columns: none;
+        grid-template-rows: max-content max-content max-content;
+    }
+
+    .cartSectionHeader {
+        display: none;
+    }
+
+    .backgroundImage {
+        padding: 26px;
+    }
+}

@@ -249,3 +249,46 @@
 
     color: #D8232A;
 }
+
+@media screen and (max-width: 500px) {
+    .productDetailsContainer {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .backgroundCard {
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+
+    .productImageContainer {
+        width: 100%;
+    }
+
+    .childContainerRight {
+        width: 100%;
+        max-width: auto;
+    }
+
+    .productIntelContainer {
+        width: 100%;
+        max-width: auto;
+    }
+
+    .purchaseOptionsButton {
+        padding: 8px 17px;
+    }
+
+    .purchaseOptions {
+        grid-gap: 12px;
+    }
+
+    .childContainerRight {
+        margin-top: 18px;
+    }
+
+    .backgroundImage {
+        padding: 48px 18px;
+    }
+}

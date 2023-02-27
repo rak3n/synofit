@@ -330,16 +330,16 @@ margin-bottom: 12px;
 
 .shippingChildSecond {
     font-family: 'Mulish';
-font-style: normal;
-font-weight: bold;
-font-size: 17px;
-line-height: 150%;
-/* or 26px */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 150%;
+    /* or 26px */
 
 
-/* Green */
+    /* Green */
 
-color: #008975;
+    color: #008975;
 }
 
 .marginRight {
@@ -348,4 +348,16 @@ color: #008975;
 
 .paymentsIcon {
     line-height: 12px;
+}
+
+@media screen and (max-width: 500px) {
+    .billingContainer {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .discount {
+        grid-template-columns: auto 25%;
+    }
 }

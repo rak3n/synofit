@@ -301,3 +301,43 @@
     line-height: 139%;
     color: #003049;
 }
+
+.containerChildRight {
+    display: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-height: 439px;
+    }
+    .rightSideImage {
+        display: none !important;
+    }
+    .childRightImage {
+        display: none;   
+    }
+    .backgroundImage {
+        max-height: 439px;
+    }
+    .filterContainer {
+        display: none;
+    }
+    .productContainer {
+        grid-template-columns: 1fr;
+    }
+    .containerChildLeft{
+        text-align: center;
+    }
+    .heroTitle {
+        font-size: 45px;
+        width: 100%;
+    }
+    .containerInfo {
+        grid-template-columns: 1fr;
+    }
+    .productSection {
+        width: 100%;
+        grid-template-columns: none;
+    }
+}

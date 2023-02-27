@@ -64,6 +64,7 @@
     position: absolute;
     top: -48px;
     right: 0;
+    width: 60vw;
 }
 
 .shopIntro {
@@ -435,4 +436,74 @@
     display: grid;
     padding: 98px 20px;
     padding-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .childRightImage {
+        display: none;
+    }
+
+    .shopTitleContainer {
+        grid-template-rows: repeat(6, max-content);
+        grid-template-columns: none;
+        grid-gap: 26px;
+    }
+
+    .containerInfo {
+        grid-template-rows: max-content max-content;
+        grid-template-columns: none;
+        grid-auto-flow: dense;
+        padding: 26px;
+    }
+
+    .testimonialChild {
+        display: none;
+    }
+
+    .testimonialImage2 {
+        display: none;
+    }
+
+    .contactImage {
+        display: none;
+    }
+
+    .productLogos {
+        grid-gap: 20px;
+        align-items: center;
+    }
+
+    .contactTitle {
+        font-size: 30px;
+    }
+
+    .contactSubTitle {
+        font-size: 15px;
+    }
+
+    .contactColumnHeader {
+        font-size: 15px;
+    }
+
+    .heroTitle {
+        font-size: 45px;
+    }
+
+    .backgroundImage {
+        max-height: 513px;
+    }
+
+    .heroSection {
+        padding: 0px;
+    }
+
+    .productContainer {
+        height: max-content;
+        max-height: max-content;
+    }
+
+    .footerColumn {
+        padding: none
+        ;
+    }
 }

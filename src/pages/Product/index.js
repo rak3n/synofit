@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import heroImage from '../../assets/hero-background.svg';
 import heroRight from '../../assets/about-us-hero.png';
 import footerSearch from '../../assets/footer-search.png';
 import Card from '../../components/Card';
+
 import styles from './style.module.css';
 
 export default function Product() {
@@ -19,7 +20,7 @@ export default function Product() {
                     <div className={styles.containerChildLeft}>
                         <div className={styles.heroTitle}>Our Products</div>
                     </div>
-                    <div styles={styles.containerChildRight}>
+                    <div styles={`${styles.containerChildRight} ${styles.rightSideImage}`}>
                         <img src={heroRight} className={styles.childRightImage} style={{ top:0 }} />
                     </div>
                 </div>

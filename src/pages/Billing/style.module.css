@@ -266,3 +266,16 @@ text-decoration-line: underline;
 
 color: #008975;
 }
+
+
+@media screen and (max-width: 500px) {
+    .billingContainer {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .discount {
+        grid-template-columns: auto 25%;
+    }
+}

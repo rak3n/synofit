@@ -49,7 +49,7 @@ export default function Home() {
     <>
       <section className={styles.container}>
         <img src={heroImage} className={styles.backgroundImage} />
-        <div className={styles.containerInfo}>
+        <div className={`${styles.containerInfo} ${styles.heroSection}`}>
           <div className={styles.containerChildLeft}>
             <div className={styles.heroTitle}>Optimal in beweging</div>
             <div className={styles.heroSubTitle}>Unique products for the musculoskeletal system</div>
@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       <section className={`${styles.containerInfo} ${styles.testimonialContainer}`}>
-        <div className={styles.containerChildLeft}>
+        <div className={`${styles.containerChildLeft} ${styles.testimonialChild}`}>
           <img src={testimonialImage} className={styles.testimonialImage} />
         </div>
         <div className={`${styles.containerChildRight} ${styles.testimonialText}`}>
@@ -145,7 +145,7 @@ export default function Home() {
             <Button text="Fill the contact form" style={{ padding: '12px 34px' }}/>
           </div>
           <div styles={styles.containerChildRight} style={{textAlign: 'right'}}>
-            <img src={contactImage} style={{background: '#fff'}}/>
+            <img src={contactImage} className={styles.contactImage} style={{background: '#fff'}}/>
           </div>
         </div>
       </section>
