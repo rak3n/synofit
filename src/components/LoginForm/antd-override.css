@@ -1,0 +1,36 @@
+.ant-input {
+  border-radius: 20px;
+  height: 40px;
+}
+
+.ant-input-password {
+  border-radius: 20px;
+  height: 40px;
+}
+
+.ant-input-password > input {
+  height: 32px;
+}
+
+.ant-form-item-row {
+  display: grid;
+  grid-template-rows: max-content max-content;
+}
+
+.ant-form-item-label {
+  text-align: left !important;
+  font-family: "Mulish" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+  line-height: 127% !important;
+  /* identical to box height, or 19px */
+
+  display: flex !important;
+  align-items: center !important;
+  letter-spacing: -0.01em !important;
+
+  /* darl blue */
+
+  color: #003049 !important;
+}

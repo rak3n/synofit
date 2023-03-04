@@ -1,14 +1,15 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import './App.css';
-import Home from './pages/Home';
-import Aboutus from './pages/AboutUs';
-import Product from './pages/Product';
-import ProductDetails from './pages/ProductDetails';
-import Cart from './pages/Cart';
-import Billing from './pages/Billing';
-import Shipping from './pages/Shipping';
+import "./App.css";
+import Home from "./pages/Home";
+import Aboutus from "./pages/AboutUs";
+import Product from "./pages/Product";
+import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import Billing from "./pages/Billing";
+import Shipping from "./pages/Shipping";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/billing" component={Billing} />
           <Route exact path="/shipping" component={Shipping} />
+          <Route exact path="/login" component={Login} />
           <Route exact path="/" component={Home} />
         </Switch>
       </BrowserRouter>
-      <header/>
+      <header />
     </div>
   );
 }

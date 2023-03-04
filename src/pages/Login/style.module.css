@@ -1,0 +1,51 @@
+.loginContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.loginTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 139%;
+  color: #003049;
+  margin: 30px 0px;
+}
+
+.leftSideContainer {
+  text-align: left;
+}
+
+.rightSideContainer {
+  display: grid;
+  justify-self: center;
+}
+
+.loginReroute {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.link {
+  margin: 30px 0px 10px 0;
+  color: #003049;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Mulish" !important;
+}
+
+@media screen and (max-width: 500px) {
+  .loginContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+
+  .rightSideContainer {
+    display: none;
+  }
+}
